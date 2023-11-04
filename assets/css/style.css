@@ -1,0 +1,617 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common - Những thành phần chung */
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 170px;
+    padding: 18px 16px;
+    border-radius: 12px;
+    background: #0f1b4c;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ======== CSS HEADER ======== */
+.header {
+    position: relative;
+    height: 100vh;
+    background: #e6f0ff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar ul li {
+    padding: 0 14px;
+}
+
+.navbar li a {
+    color: #4f5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+.navbar .action {
+    margin-left: auto;
+}
+
+.navbar .action .link {
+    color: #0f1b4c;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navbar .action .navbar-btn {
+    min-width: 98px;
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+    background: #0f1b4c;
+}
+
+.header .info {
+    width: 559px;
+    height: calc(100vh - 78px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .info .sub-title {
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.018rem;
+}
+
+.header .info .title {
+    margin-top: 8px;
+    color: #000336;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.19; /* 118.75% */
+}
+
+.header .info .desc {
+    margin-top: 30px;
+    color: #5a6473;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78; /* 177.778% */
+}
+
+.header .info .info-btn {
+    width: 170px;
+    margin-top: 40px;
+}
+
+.header .info .image {
+    position: absolute;
+    bottom: 0;
+    right: calc((100vw - 1110px) / 2 - 100px);
+}
+
+/* ======== CSS CLIENTS ======== */
+.client {
+    padding: 43px 0 41px;
+    margin-top: 79px;
+}
+
+.client .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client .info {
+    margin-top: 23px;
+}
+
+.client .info .desc {
+    color: #7d8589;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+}
+
+.client .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.client .logo a {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 42px;
+    border-radius: 12px;
+}
+
+.client .logo a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ======== CSS GUIDES ======== */
+.guide {
+    padding: 79px 0;
+    margin-top: 8px;
+}
+
+.guide .info {
+    text-align: center;
+}
+
+.guide .info .title {
+    position: relative;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.guide .info .title::before {
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    background: #000339;
+}
+
+.guide .info .sub-title {
+    width: 459px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88; /* 187.5% */
+}
+
+.guide .action {
+    margin-top: 70px;
+}
+
+.guide .list {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    text-align: center;
+}
+
+.guide .item p {
+    margin-top: 26px;
+    color: #3b3c45;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1; /* 110% */
+}
+
+.guide .item span {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.guide .item .link {
+    color: #0689ff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.guide .item .arrow {
+    margin-left: 8px;
+}
+
+.guide .action .action-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* ======== CSS FEATURED ======== */
+.featured {
+    background: #f5fafe;
+}
+
+.featured .info {
+    padding-top: 110px;
+}
+
+.featured .info .title {
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.featured .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.featured .row .sub-title {
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88; /* 187.5% */
+}
+
+.featured .row span {
+    display: flex;
+    align-items: center;
+}
+
+.featured .row .link {
+    color: #0689ff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.featured .row .arrow {
+    margin-left: 8px;
+}
+
+.featured .list {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 110px;
+    margin-top: 70px;
+}
+
+.featured .list-item {
+    flex: 1;
+}
+
+.featured .list-item .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.featured .list-item .body {
+    padding: 20px 38px 23px 20px;
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+}
+
+.featured .list-item .item-title {
+    color: #000339;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.featured .list-item .desc {
+    margin-top: 11px;
+    color: #a3a6ab;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.featured .body ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.featured .body li {
+    display: flex;
+    align-items: center;
+}
+
+.featured .body .label {
+    margin-left: 8px;
+}
+
+/* ======== CSS STATS ======== */
+.stats {
+    padding: 50px 0;
+    margin-top: 75px;
+}
+
+.stats .content {
+    width: 1017px;
+    max-width: 100%;
+    position: relative;
+}
+
+.stats .body {
+    display: flex;
+}
+
+.stats .img-block,
+.stats .info {
+    width: 50%;
+}
+
+.stats .body .image {
+    display: block;
+    margin-left: auto;
+    width: 400px;
+    height: 460px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.stats .body .info {
+    padding-top: 79px;
+    padding-left: 165px;
+}
+
+.stats .info .title {
+    position: relative;
+    width: 269px;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.29; /* 128.571% */
+}
+
+.stats .info .title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.stats .info .desc {
+    width: 309px;
+    margin-top: 20px;
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88; /* 187.5% */
+}
+
+.stats .trend {
+    width: 239px;
+    height: 252px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 45px 22px 40px;
+    background: #fff;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.stats .trend .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats .trend .value {
+    color: #000339;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1; /* 100% */
+    letter-spacing: 0.026rem;
+}
+
+.stats .trend .desc {
+    margin-top: 8px;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+}
+
+.stats .trend .separate {
+    margin-top: 26px;
+    height: 1.2px;
+    background: #e9e9e9;
+}
+
+.stats .icon-block {
+    display: flex;
+    margin-top: 26px;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.stats .icon-block .group {
+    display: flex;
+}
+
+.stats .icon-block .icon {
+    width: 16px;
+    height: 16px;
+    margin-left: -3px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.stats .icon-block .icon:first-child {
+    margin-left: 0;
+}
+
+.stats .qty {
+    padding: 110px 0 0 32px;
+}
+
+.stats .qty .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats .qty .qty-value {
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.stats .qty .sub-info {
+    margin-top: 22px;
+    color: #7b8087;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* ======== CSS SUBSCRIPTION ======== */
+.subscription {
+    margin-top: 90px;
+}
+
+.subscription .content {
+    position: relative;
+    height: 370px;
+    border-radius: 20px;
+    background: #063183;
+}
+
+.subscription .info {
+    padding: 110px 80px 110px;
+}
+
+.subscription .info .title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.subscription .info .desc {
+    margin-top: 15px;
+    color: #fff;
+    opacity: 0.75;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88; /* 187.5% */
+}
+
+.subscription .info .subscription-btn {
+    margin-top: 20px;
+    min-width: 151px;
+    background: #fff;
+    color: #002366;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.subscription .image-block .image {
+    position: absolute;
+    bottom: 0;
+    right: 221px;
+}
+
+/* ======== CSS FOOTER ======== */
+.footer {
+    padding: 50px 0 58px;
+    margin-top: 55px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .row .title {
+    color: #1c1c1d;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer .row ul {
+    margin-top: 42px;
+}
+
+.footer ul li {
+    margin-top: 18px;
+}
+
+.footer ul a {
+    color: #7a7a7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer .row .sub-title {
+    width: 257px;
+    margin-top: 36px;
+    color: #7a7a7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.footer .row .social-icon {
+    margin-top: 40px;
+}
+
+.footer .row .social-link:hover {
+    opacity: 0.7;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 81px;
+}
+
+.footer .copyright .desc {
+    color: #c2c2c2;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
